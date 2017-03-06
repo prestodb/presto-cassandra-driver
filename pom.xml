@@ -105,14 +105,6 @@
                                     <pattern>org.objectweb</pattern>
                                     <shadedPattern>${shadeBase}.org.objectweb</shadedPattern>
                                 </relocation>
-				<relocation>
-                                    <pattern>jnr</pattern>
-                                    <shadedPattern>${shadeBase}.jnr</shadedPattern>
-                                </relocation>
-				<relocation>
-                                    <pattern>com.kenai</pattern>
-                                    <shadedPattern>${shadeBase}.com.kenai</shadedPattern>
-                                </relocation>
                             </relocations>
                             <filters>
                                 <filter>

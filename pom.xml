@@ -90,6 +90,7 @@
                                     <include>com.google.guava:guava</include>
                                     <include>org.ow2.asm:*</include>
                                     <include>com.github.jnr:*</include>
+                                    <include>io.netty:*</include>
                                 </includes>
                             </artifactSet>
                             <relocations>
@@ -104,6 +105,10 @@
                                 <relocation>
                                     <pattern>org.objectweb</pattern>
                                     <shadedPattern>${shadeBase}.org.objectweb</shadedPattern>
+                                </relocation>
+                                <relocation>
+                                    <pattern>io.netty</pattern>
+                                    <shadedPattern>${shadeBase}.io.netty</shadedPattern>
                                 </relocation>
                             </relocations>
                             <filters>

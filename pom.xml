@@ -101,7 +101,7 @@
                                     <pattern>com.google.thirdparty</pattern>
                                     <shadedPattern>${shadeBase}.com.google.thirdparty</shadedPattern>
                                 </relocation>
-				<relocation>
+                                <relocation>
                                     <pattern>org.objectweb</pattern>
                                     <shadedPattern>${shadeBase}.org.objectweb</shadedPattern>
                                 </relocation>

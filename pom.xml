@@ -43,7 +43,7 @@
         <dependency>
             <groupId>com.datastax.cassandra</groupId>
             <artifactId>cassandra-driver-core</artifactId>
-            <version>3.1.4</version>
+            <version>3.6.0</version>
         </dependency>
     </dependencies>
 
@@ -90,6 +90,7 @@
                                     <include>com.google.guava:guava</include>
                                     <include>org.ow2.asm:*</include>
                                     <include>com.github.jnr:*</include>
+                                    <include>io.netty:*</include>
                                 </includes>
                             </artifactSet>
                             <relocations>
@@ -101,9 +102,13 @@
                                     <pattern>com.google.thirdparty</pattern>
                                     <shadedPattern>${shadeBase}.com.google.thirdparty</shadedPattern>
                                 </relocation>
-				<relocation>
+                                <relocation>
                                     <pattern>org.objectweb</pattern>
                                     <shadedPattern>${shadeBase}.org.objectweb</shadedPattern>
+                                </relocation>
+                                <relocation>
+                                    <pattern>io.netty</pattern>
+                                    <shadedPattern>${shadeBase}.io.netty</shadedPattern>
                                 </relocation>
                             </relocations>
                             <filters>
